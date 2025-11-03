@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ThinkLab Academy - Materials</title>
+  <link rel="stylesheet" href="materials.css" />
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <a href="index.html"><img src="Logo.png" alt="ThinkLab Academy Logo" class="logo" /></a>
+      <h1 class="title">Materials</h1>
+    </header>
+
+    <section class="materials-section">
+      <div class="container">
+        <div class="filters-row" aria-label="Filters">
+          <div class="filter-group filter-type">
+            <label for="filter-type" class="filter-label">Material Type</label>
+            <select id="filter-type" class="filter-select" aria-label="Filter by Material Type">
+              <option value="all">All Types</option>
+              <option value="study">Study Materials</option>
+              <option value="sat">SAT</option>
+              <option value="act">ACT</option>
+              <option value="capstone">Capstone</option>
+            </select>
+          </div>
+
+          <div class="filter-group filter-subject" id="subject-filter-group" style="display:none;">
+            <label for="filter-subject" class="filter-label">Subject</label>
+            <select id="filter-subject" class="filter-select" aria-label="Filter by Subject"></select>
+          </div>
+
+          <div class="filter-group filter-grade" id="grade-filter-group" style="display:none;">
+            <label for="filter-grade" class="filter-label">Grade</label>
+            <select id="filter-grade" class="filter-select" aria-label="Filter by Grade"></select>
+          </div>
+
+          <div class="filter-group filter-semester" id="semester-filter-group" style="display:none;">
+            <label for="filter-semester" class="filter-label">Semester</label>
+            <select id="filter-semester" class="filter-select" aria-label="Filter by Semester"></select>
+          </div>
+
+          <div class="counts-inline" aria-hidden="true">
+            <div class="count-badge">Visible: <span id="count-visible">0</span></div>
+            <div class="count-badge">Total: <span id="count-total">0</span></div>
+          </div>
+        </div>
+
+        <div class="search-row">
+          <input id="search-input" type="search" placeholder="Search lessons (title or content)" class="search-input" />
+        </div>
+
+        <div id="materials-list">
+
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology References
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Modern Biology", "id": "1cvv5CgcuhLpIk5iZ_8xEfFzefSecdZKI"}, {"name": "Campbell Notes", "id": "11lORSTObvMJ-c6rTQ86o3cu0mMQ-ohE7"}, {"name": "Human Biology", "id": "1OTpYh_yQCZ3WfxAsvKzCgom5gc0NBC8K"}, {"name": "AP Biology", "id": "18W9F-RkfS1cWwm5lCsSwcvp3HvM137ib"}, {"name": "IGCSE Biology", "id": "15_7g0xHeK_5mS66MG7ja0oXBTv3IVm2Q"}, {"name": "Holt Biology", "id": "1oY2prtYqw39D1h3OvsP9gokB6OyIaAo5"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology Old Exams
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Exam 1", "id": "1VEI9xU1Ix66jVC05BJkHCRnaOfoeufqI"}, {"name": "Exam 2", "id": "1Z_JWy6rG5cPz6-dpHGEZ84mKWP1C1NC1"}, {"name": "Exam 3", "id": "1v1zMm3DE8QxMSLSfL7QV9qwuJYF6Mf0I"}, {"name": "Exam 4", "id": "1ssx8vB5RFPPBJI3HM8rFU8mEPvUCc0q1"}, {"name": "Exam 5", "id": "1HpoSUQpX8m1erjTdOu_u5oI1QokzPTIT"}, {"name": "Exam 6", "id": "1CaUppqkPizFuO-fYrNJvnJ3Chwh_JFKL"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology L.O 1
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Materials", "id": "1NY6jC50tJpIUOsJ-c6G-ZQhudZYooNny"}, {"name": "Questions", "id": "1NY6jC50tJpIUOsJ-c6G-ZQhudZYooNny"}, {"name": "Video 1", "id": "1Wo1JkpMsSu6HdjCYd7IlK7ht-0KxyFhN"}, {"name": "Video 2", "id": "1iUuLzCptDGkRRsJAhGn6H0kUA70731ud"}, {"name": "Video 3", "id": "1E-7aLI7MQm2JRGj8CQOrLlHeP9Fd4Yn2"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology L.O 2
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Questions", "id": "1ojEEi2_85RLctH44jxUIyQFSGOrZRE0B"}, {"name": "Video", "id": "1ZFsz4I_FzXJ2FDcuIlmBRQT5FGzkj7nC"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology L.O 3
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Materials", "id": "1VDAF9rR5apBBIY0z7Pk4_G1_fUKhvZde"}, {"name": "Questions 1", "id": "1plBjakaUTDpMSTqItGLwennrZyEtwdIa"}, {"name": "Questions 2", "id": "1hKinhX-Oala9eAGzphV979fiEjAXiOkY"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology L.O 4
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Materials", "id": "1j7lEy7YsCr_Td17qLU8gO46ceoEYuGUm"}, {"name": "Questions 1", "id": "1T-HSL2bTgNeqRFPvRD4ssI3Fml1TpMw0"}, {"name": "Questions 2", "id": "1TJdCtGjEKboxo0LyfnX1BsbrIkKGAHpl"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology L.O 5
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Materials", "id": "1-NRWY7paB0h6Y1caS4sZvx0j02k6verF"}, {"name": "Questions", "id": "13VqcxM4qzoCLBVslmVyUVfZ5tv6MFgae"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology L.O 6
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Materials", "id": "1OhpFGtqQMDII1ppLsz8i7UxOXCwIkpMK"}, {"name": "Questions", "id": "1d9hSctQ4yL4ahNARYwKZLjeeJNgI5r_L"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology L.O 7
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Materials", "id": "1p_9_WcYlEDV-GaULn7poZgfRffUxhhIQ"}, {"name": "Questions", "id": "1wByWNBb-5PIR74FN2h1U_CL0w_isOIrX"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="biology" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Biology L.O 8
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Materials", "id": "1eMqx04RhhNzNJIil1xM0dfygphewf-Kk"}, {"name": "Questions", "id": "1AQClqnOuvrdVjapuewJtf2qPKkUH5wjq"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="chemistry" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Chemistry References
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Holt Chemistry", "id": "1QUq1dnqvI5ArtlSm1qjGcOxSxftuE_qb"}, {"name": "Modern Chemistry", "id": "1cPHjObAkuFoXLM73qSt3iiCnXtK0aHnt"}, {"name": "Active Chemistry", "id": "1iMRTLIAY46pRgq9NXkOZ1S_ovvNij45F"}, {"name": "Zumdhal Chemistry", "id": "16bcqkcPkWI5ibbkJI3-yHbq9Y40DgLGU"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="physics" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Physics Old Exams
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Exam 1", "id": "1K-H19c8yapCX5WykirOwe9R4BgEaz412"}, {"name": "Exam 2", "id": "15gWL9mOa-Pk4jJIL_IgdyE0ywH8Z8kGD"}, {"name": "Exam 3", "id": "1UgHHY3fwGX7iWoyloc-FOoSJEAKFrWMu"}, {"name": "Exam 4", "id": "1WgHHDb21nH7Q_Wj7O5KOT4_OawPS5sJW"}, {"name": "Exam 5", "id": "1vFVkaK-ki_Ob36zanPSxjWPGwqkNrqmg"}, {"name": "Exam 6", "id": "1SP77dbHR-ZinyohQvHqxWHjB5EL6YpOJ"}, {"name": "Exam 7", "id": "1XLiwmkD5XRPuZyM4BuIzUkGmIPAVPqpz"}, {"name": "Exam 8", "id": "14WlQC7HJdn3fmrade79Qbl-mMwGHWo6O"}, {"name": "Exam 9", "id": "1p5d239-sRtGZ7k-jeg-MkfbDuBiWkjiP"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="math" data-grade="g10" data-semester="s1">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 MATH L.O 1
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Questions", "id": "13Mkt7no7iUHkxSg7NFlgri4l8cy39Sf0"}, {"name": "Material 1", "id": "1s_J7ImoDk7EX3aaFnP7AXmMD-gEdc86S"}, {"name": "Material 2", "id": "1X6mjWHSdEBFZpN3hPM8OVO3Ai9OcLs4x"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="math" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 MATH References
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "College Algebra with Trig", "id": "1fzhERr3fr7umooPGEhPnv94HKyyPOH_z"}, {"name": "Cambridge", "id": "1JJ0qeWMGu_VTKvzozVqrFx50Uo_s7fZ7"}, {"name": "IIT Jee", "id": "1VMEqL0yn_8Nu9gCEboZRhLCF6JzWKikC"}, {"name": "Pre-calculus 11", "id": "1D-g0EtR739GoorWX5Zphg2jJ82a3uCAe"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="math" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 MATH Old Exams
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Exam 1", "id": "10Jvu5lABTqdifyzbKFppO53xBXB3jl01"}, {"name": "Exam 2", "id": "1WAhYUt1Me-tDzBZaEFyi1zdpR2S05zOC"}, {"name": "Exam 3", "id": "1WnykdVxKiQ6ng6Iaso0A9PZtUI0vKXWw"}, {"name": "Exam 4", "id": "1YTIakxJhkL46XPT8QU58AbZSArUnoPm3"}, {"name": "Exam 5", "id": "130sjbuhnaLrfDEoamrEp2Dc-CuOB-NLw"}, {"name": "Exam 6", "id": "1lZ1myMY2PBGlrXNDNEcSnai3s_GHv1-F"}, {"name": "Exam 7", "id": "1zBnmN6g32D5S13kY-e0ayvtE72Puw26E"}, {"name": "Exam 8", "id": "13pz2ltbWi6yZd3FrWOW3KaYFJRa7W82e"}, {"name": "Exam 9", "id": "1KzOb0kcBIxBRurXokY30oVwf5OCXxNWY"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="geology" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Geology References
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Earthcome1", "id": "1L3JLzVOhMmkD56QNnRKoDhJbfZZjHfrk"}, {"name": "Earthcome2", "id": "1ehxlLTkWmN7sJRhqi9lO3gaZaoJATkd7"}, {"name": "Essentials", "id": "1V-AzqrPAYkGfl_M7CctKJJqAGexMD5Ur"}, {"name": "Inventory", "id": "1_YFAIUu9ryLv-C3g0CykB2LlqTTuKLKQ"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="geology" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Geology Old Exams
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "exam1", "id": "1aZVooyGJmVSTFzgyAYl7aWcxfs_FQf65"}, {"name": "exam2", "id": "1nyo4VG-wnzLUmXf0Ct-W7pMUTu6xz1ti"}, {"name": "exam3", "id": "13tDNzF4dzlCpN_cYSdqPR5sa2EzXoUXl"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+<div class="lesson" data-type="study" data-subject="mechanics" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Mechanics References
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "Cambridge", "id": "1WsFDxnxTaoYDGBxi4O_jfeLHVaU4A6vE"}, {"name": "Engineering", "id": "14MB2xxY5DVb3gmARjnb2NjuYSt_rEjid"}, {"name": "understanding stastics", "id": "1XMN6LY_vvUf-s6EGdct2FgK-JQYbsxkj"}, {"name": "understanding mechanics", "id": "1WKHrlM8P3nc-n6PEmFvH1xtEcddTM4qQ"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" data-type="study" data-subject="mechanics" data-grade="all" data-semester="all">
+            <div class="lesson-header" tabindex="0">
+              G10 S1 Mechanics Old Exams
+              <span class="arrow">▼</span>
+            </div>
+            <div class="lesson-materials">
+              <div class="material">
+                <button class="material-button" data-files='[{"name": "exam1", "id": "1CgDEVZAOa6ymdNCeSMHaGHEcMkW5xt9R"}, {"name": "exam2", "id": "1qtxRu6eoF_TOMwns1D2ooOseNc4L7r3f"}, {"name": "exam3", "id": "1yu5v25uQ75YPb-fxK9jwi8oSJd95vLpo"}, {"name": "exam4", "id": "1652FpvMTlD97GjrEaIq6OBEjn_4up6Lp"}, {"name": "exam5", "id": "1kNlsPOsB6Wskz8YALYJRi8CGyVAjqU_m"}, {"name": "exam6", "id": "1Yo0_eW7E6yu4K7eUQcK6S-5W7NhheB2d"}]'>
+                  View Materials
+                </button>
+              </div>
+            </div>
+          </div>
+          
+                      <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT Practice Materials<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"ACT Material 1","id":"1VoqhQHb_5FMDmZwD26ut-7y1ixxXO4e3"},{"name":"ACT Material 2","id":"1pOYt7TNE1LgzwFqE6Hagi-4RPT0ekSCR"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Main Collection<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Main IELTS Folder","id":"1dadEcMJmj991ZPPsxZlLqgeITnV8OHwk"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Core Materials<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Material 1","id":"1W6BSkKYTE_cF8W9UFuuc-gv2y_FOlygg"},{"name":"Material 2","id":"1MrAnBlPFHOtjwlyJDggOfF8jCTo8T-Iz"},{"name":"Material 3","id":"1w7sOC_tb_eLgd_AnimUW8KkChFeFMCwI"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Practice Set 1<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Practice Folder 1","id":"1yQqsXJeJaMrBaWeBAqYsudpN6ww6XVNm"},{"name":"Practice Folder 2","id":"1EJWL0r3sWddsThgfTl2S7KRHM8wPHAY4"},{"name":"Practice Folder 3","id":"1o_aGFl0_CtLoZCV2dPE3Zg-uASm2MpaV"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Practice Set 2<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Practice Folder 4","id":"1LDJ-86cJ3CZVnzgwDwH4Akrygkh187xc"},{"name":"Practice Folder 5","id":"1LVI0kWCbV1hcx4Vj9s6sqnOwftYoe0aA"},{"name":"Practice Folder 6","id":"1bnwrRSC8zNZsAqAA7Wxp3sxSqZEPlWPK"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Practice Set 3<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Practice Folder 7","id":"1BkxgpyYynsaCnlHCLsTFiDpiLyoexEQe"},{"name":"Practice Folder 8","id":"10Ti-eEVeHGaHAx-SPqU-4S1u-7EC1J90"},{"name":"Practice Folder 9","id":"1jPmyaWUg2TnEwN4U6LxBBq5eerDIpS0b"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Practice Set 4<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Practice Folder 10","id":"1etaoKt-5cyCGXcZ07Wf_wEre_ig3jPN_"},{"name":"Practice Folder 11","id":"1gWmlEpRu7Cu6I9n-aaAokY4HGNI49aEj"},{"name":"Practice Folder 12","id":"1iIuwK-TPHzwq2wOZnITbMGrpVFX8bI6a"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Additional Resources<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Resource Folder","id":"1G5XOkdpcQUdIuW5WG1pMlif7DWRUZ48G"},{"name":"Study Document","id":"1YtsXdDFIBhy80JGYFUSjA9EPmqy45URT"}]'>View Materials</button></div></div>
+          </div>
+           <!-- ACT SECTION -->
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT Books<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"ACT Practice tests pdf 10","id":"1NgU0rhJNrIMThVoqIFRmEKkYiESKjos4"},{"name":"Copy of merged pdf","id":"151wwMcWIquITP9okICEKZ3_s1vKSrANA"},{"name":"Erica Grammar 4th Edition","id":"1bw6qkIPmDP-4dII_cQi_jCPDCXHR2gEo"},{"name":"For the love of ACT science","id":"1Nn6sjLtaoGzrGdaRNO2A8aICi0MrgFYN"},{"name":"MagoohACTeBook","id":"1zbFxBJXLuwWcuzkHmBniBUdFaOuASgoP"},{"name":"The Real ACT Prep Guide","id":"1Md0SgiDYMMk7rdYYPXf7H_zi28NnT8d8"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT Exams<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"2011-2012(1)","id":"1sqjxquzz32E7q0D-9ncO0tTpGAIC0SAz"},{"name":"2011-2012","id":"1oy2XOT4i0Rf6Zlw9Bf8NDCzIs4RWBTB0"},{"name":"2008-2009","id":"1dMNJ4yrk1zwE6HBgpT2yMh1O4fb6g7y2"},{"name":"2007-2008","id":"1zknQbjLahpRaOIk8zddPLZ6RG_75kvmP"},{"name":"act2exp","id":"1oRmp-rFsmKQd6GG0CHdx5wW0aU9ieZB_"},{"name":"Practice Test 3","id":"1UUeECVG2KndT34r1xv0dpaaqTBw4piZ1"},{"name":"1996 Form 1ST","id":"13JkRvzw8vGINh2FA3OUN_C1BjY1xwJjh"},{"name":"71C 6-2013","id":"121bApgYkE8xkYG4W44kr84wjxPqM1Qjr"},{"name":"70G 4-2012","id":"1q-1ma6TvJ9-P9sPdnyQbzJ37eULjk-2E"},{"name":"68C Answers","id":"1i9c9P544k5k88RavHY0mh8Ci8ohhmy1Z"},{"name":"June 2018 A11","id":"1GlLUNPlhT5QQi_JSMXRtDyhxTJEH3R5t"},{"name":"June 2017 74C","id":"1Ghn-LkLLmAa-HIkK8uVR6EvA0qyQO69s"},{"name":"Dec 2015 72E","id":"1dAgoId2l3wManV--5AhvoFJG20NHhWUV"},{"name":"Form 62D 2008-9","id":"1CMt1i9fAa-_NtQ1RBHvULYxjBUfG8_xm"},{"name":"Form 61B 2008","id":"1J0hn-xI-HngTfNUOt_N9FbiuuLZEXx3x"},{"name":"Form 0661C 2007-8","id":"1f1GXX_Oc77_c1TSOxEIwaitQ-DYsQBAi"},{"name":"April 2004 61F","id":"1xGdeQJ2tc5Edv_ahxJo5_t7tdfK-wzBP"},{"name":"Jan 2003 59F","id":"1WfaOb6jFZrBFz9_uK0k-lluFLEuIVv33"},{"name":"Dec 2003 61E","id":"191Iyk0vVg7BGCeIG6eUGi_OrsC-Y45Rg"},{"name":"May 2002 55C","id":"1m-yJKHXHYN62amxth0DBGGyumkBbqJk9"},{"name":"Form 57B 2002","id":"1Ue8xm7b1Y0i859BU7ZLV17Y2YtATLsh3"},{"name":"Jan 2001 56B","id":"1l1YwkOLtO79F0vqu7_UOVNlgIFXzJ5MP"},{"name":"Form 2ST 1997","id":"16VHw1vUCag76xk3KgMxgCdbpXftwl5Od"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT Questions<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"in context","id":"1QBxZFCmqmZqUfH-zN7BLA2lmeZbOQbUI"},{"name":"much like vs as vs more like","id":"1ZchYWnLlJLjqQwd4M6VBtGpJ2973NQLw"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT1 Exams<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"68C Answers","id":"177t7JjdE3-iR9ArQgkQOPjCICKkW8OsO"},{"name":"70G 4-2012","id":"19_jLF9_8ccWmjKmIspXfHIsPRdtjvzuH"},{"name":"71C 6-2013","id":"1L-TAXp1uFqCs8QbKLCjZkLDIO-2PyDGP"},{"name":"201104 Form 67F","id":"1uiXRngWEtrYeEK-qYldN-bs-0KX-yZdm"},{"name":"201106 Form 67B","id":"1_LD9N5gqHCN8VcCtxuoysdiDZMMYTHux"id":"18L4_XMzUxtcx41XV-LQzFi2GmbK6Lwv5"},{"name":"201204 Form 70G","id":"1oIB8KKAbqWwXya6B7BwPgivaiKC2r6fp"},{"name":"201206 Form 70C","id":"1kNAy8CtERAl0KkaAQpeGHznH_GO9qyO0"},{"name":"201212 Form 71A","id":"1PfQzX5_2SBpFtGr_CbGDoj9vX-mQaTEV"},{"name":"201304 Form 71G","id":"1bMDjlJaTrQAQboUfYbv1N1M7TkzrV4t1"},{"name":"201304 Form 71G dup","id":"1QyEO2HxKQf_E3EXthGxr43wyWd7D_CJQ"},{"name":"201306 Form 71C","id":"1AqxL3VzYyp0zZ5bC6_fFMQWF5pfpGiUQ"},{"name":"201312 Form 71E","id":"1eW7udkWGOqlorAsIRpDcgr1SIxNHBit6"},{"name":"201404 Form 71H","id":"1i1I2Ol1VWJCQInm_68AajCHAwnhEYFLn"},{"name":"201406 Form 72C","id":"1rFidcUbP16HGYwSSkyE-EvTft8R5NK5E"},{"name":"201412 Form 72G","id":"1XvVkRm0rX9l475-abKeLdCtuS6MmYMts"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT3 Exams<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"June 2005 Form 61D","id":"1_XyGngcotR2dDhOLEslFTJb9JPqeP0UP"},{"name":"Dec 2018 B05","id":"18wNfmG1Xd8TXx2qYvge5QlcbHb4vrZdu"},{"name":"OG 1-2012 Form 1MC","id":"1eWGfsOUXt_gMbdc0Qucuxui7nKc_eEuH"},{"name":"OG 2-2009 Form 2MC","id":"1LxK_v5C18czhDje1ZoXRUR2T1dB1WKFx"},{"name":"Preparing-for-the-ACT","id":"1ZlGkHKaHHOhacCz0_CDtfTh9PhjV9bi0"},{"name":"2008-2009 (1)","id":"1MgBVV-CBZFTC9QgsRnBiqh3W7N0b7XQz"},{"name":"2009-2010 (1)","id":"1X8wtAfyj76HlVHTL5BIfCcedtqpRIKZh"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT4 Books<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Manhattan Prep ACT","id":"1ilfFdZqt_9S9cowlJkGwH-bvSJHycqSr"},{"name":"ACT Practice Tests","id":"1csMExaNCRpKc0Px6fU7QSPKCkwF9DDB_"},{"name":"ACT Red book (1)","id":"1fpZsJtPM5NK9rp237acj2unAhTTSfbhb"},{"name":"ACT Red book (2)","id":"1C6Zs4XQ9vKRb3zNOCBnFxcRHgm-NSToK"},{"name":"Erica Grammar 4th (1)","id":"1km1oWDWmQIZwc73gX3LLhIs32vKC6DRL"},{"name":"Panda Maths zip","id":"10PdXHGnHZCFE_IWvL7vL5CvpKKSNhDhn"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT5 Books - Panda Maths<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"College Panda ACT Math","id":"1zD6KbG2iTSKIpHfraGJFjRpC_bXwe3qU"},{"name":"Pandas ACT Math by Nielson","id":"1tiIcxGT8X8tqFwR_Jz6AjBjXBgZLjRf0"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT5 Exams<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"English Practice 12","id":"1Cg-qnBSVPtNboEiCRCxPVdpUShITjsXY"},{"name":"English Practice 13","id":"1mwuV5-d8fjSkYnYNTIUIcmPE2mD3tpaw"},{"name":"English Practice 14","id":"1R-uGcq9qcHPyqdABi_1SgtOuxsw77Q7G"},{"name":"English Practice 15","id":"1SXHO8JdJyPIWGgUD7hZSm1OuObo5YgC3"},{"name":"Form 4MC","id":"1Gv2VGs7Xte071bdI2JX-qNDm7v1Qd-E9"},{"name":"Form 5MC","id":"1xgFZlVHNhmf39xju626toMsWrtwU1p8B"},{"name":"Form 54D Math Only","id":"1XFoXjDXKfNrKZeQs2erefYc3UMA9-xGM"},{"name":"Form 56B No Math","id":"167ImegnwNQ4Ugq7kDDvhJi9clP36ijd6"},{"name":"Form 59C No MathSci","id":"1V7iD1tJ8cF1xMX0bR1OvJXwxNoDK_H47"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT6 Exams - Full Tests<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Test1 English","id":"1xqo0dDNxcBV31PfL47R0pvZf2jAdZZmx"},{"name":"Test1 Math","id":"1rgWxnYo3LEtF7z1psOSRNJQlA2mtwoHp"},{"name":"Test1 Reading","id":"1B9UxvZvrxhP2uou1GUM4z5dCTG53tIKD"},{"name":"Test1 Science","id":"1TixqBHjf-P0E4tl-x9icLnCQALnDJmRO"},{"name":"Test1 Teacher English","id":"1jZONhNxi_mKw4UUr6dra4v5ahNN4TlAJ"},{"name":"Test1 Teacher Math","id":"1Cl74GDWplnE6J_uF2So5umQRSeTZEmGZ"},{"name":"Test1 Teacher Science","id":"1zl8tb0Zp6dK-8LyiEddRQHNoSdp-ngQI"},{"name":"Test2 English","id":"1CH2taHEV5J0E_G2UDIhVhRAMLDZ4dk0M"},{"name":"Test2 Math","id":"13miSy6QACftH5sGBYCCkoQcF6N_qZyc3"},{"name":"Test2 Reading","id":"1KDvKLMNn65Ea_bOuYkX9TAN3VvBkmVR9"},{"name":"Test2 Science","id":"1xd_W6brX3dEEeFtfhrT9UTBrDxOwJYMO"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT Tests - Official<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Test 2005-06","id":"11HqVAoaRH4ZVaqrN_6gFv-l1w3gQCY85"},{"name":"Test 2011-12","id":"1hZ3hooDbj-N2QIaL7YDqVvfKOnz0tvLz"},{"name":"Test 2014-15","id":"1Q6Oh1H5Q0w6nQ1VDRVXFqcYECHNUhCZ1"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT Practice Tests<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"2016-2017 Test 2","id":"1A0ZfH8dIpHPyiepRe5sYwPNRt8nnIooC"},{"name":"2016-2017 Test 3","id":"1iN3rbh_JhOKA0bG9rlFp1Zuo_SiLzPmz"},{"name":"2016-2017 Test 4","id":"1Bwv7jPf3uz90C1TWv779-gmkIRGhrfgI"},{"name":"2016-2017 Test 5","id":"1dWNoGTTFXzTmSgWEA6vmPMKkIaPWpV-U"},{"name":"act1exp","id":"1KbdOuNQGp2QhjT4N9zYmHmgNehETZRq8"},{"name":"act2exp","id":"1EyuOa4bAd9vPe16K9fXkcrBQCs0DKHtI"},{"name":"act3exp","id":"111RkWTiUYssf7eXE0B_t81jNhI3HjG7u"},{"name":"act4exp","id":"1Z3QqUsLKNs2DHfmQSzdx2kCIuAskL3sH"},{"name":"ACT Preparing","id":"1xL0ULjc6VZjlEivB8RgYRXqWNCHKxS4K"},{"name":"April 2021 70A","id":"1h_M4r5RkYySeGeZOWf8eseOlAu-SFHQb"},{"name":"December 2018 70A","id":"1DyIMUnXKDVItTMIDQ2poYAJ-v5nv8-VH"},{"name":"EJ499163","id":"14QpxbUkaaL_C3S5DSSsaPurxDYkIW9Tt"},{"name":"Magoosh Practice Test","id":"1Wa02ySvJs_EPcGO1_VbrvsW8-SFrtGk6"},{"name":"OG 1-2012 1MC","id":"1wqmbT6Ko_a59dHTPJVEes3KRvtc53wwP"},{"name":"OG 2-2009 2MC","id":"1ISSpiBbGRmVq5Wk58Y_XOItSpVJBQpMY"},{"name":"OG 3-2009 3MC","id":"1v0UzHZTQYhIrtHDHRnVaiX-pyUTWWYgv"},{"name":"Preparing ACT","id":"1la-wJ9LWYzVQDlhUTXhqNa4G9py4d9n2"},{"name":"2003-2004","id":"1RF2j0epNeSxPVVe9-1DfzV-6O6LuBF10"},{"name":"2005-2006","id":"1QBSSek0rZC624srlA7MehpLbKmwAjkxz"},{"name":"2007-2008","id":"1v5lf6U1jH3Mg6UNsp1hZeRHfnCi76zJv"},{"name":"2008-2009","id":"1WdfYYddGr8Xu6rg4B8kuRysENr608GI1"},{"name":"2009-2010(1)","id":"1PT1WO6HR2789hbDaSlYDXK2HQErVN-XJ"},{"name":"2011-2012","id":"1KmX-BbZ11RcMFaxA5cKhhMqc8SvYyYu5"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="act">
+            <div class="lesson-header" tabindex="0">ACT Questions & English<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"In context","id":"1V8njGb-ETDiqszgHXEXouwVKci5kIIgD"},{"name":"much like vs more like","id":"1DFuPzvO2TKZ0REPFKrcc0jVTbia__wXV"},{"name":"ACT English Guide","id":"1L6Zsj3Qg_D-pMSJ3gs0H-S9z9rXhWo-e"},{"name":"DSAT Oct 5 INT A","id":"1O7RCpV8391YPoMLFHt-CL0msb04uOGxE"},{"name":"DSAT Oct 5 INT B","id":"1XulACIeSZ7CfIur73j08_ZhITSlapVq6"},{"name":"Erica Complete Guide ACT English","id":"1h5kn_cQWo2rNchE3NxV2cG2dxHmW-_s8"}]'>View Materials</button></div></div>
+          </div>
+
+          <!-- IELTS SECTION -->
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Main Collection<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Main IELTS Folder","id":"1dadEcMJmj991ZPPsxZlLqgeITnV8OHwk"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Core Materials<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Material 1","id":"1W6BSkKYTE_cF8W9UFuuc-gv2y_FOlygg"},{"name":"Material 2","id":"1MrAnBlPFHOtjwlyJDggOfF8jCTo8T-Iz"},{"name":"Material 3","id":"1w7sOC_tb_eLgd_AnimUW8KkChFeFMCwI"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Practice Set 1<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Practice Folder 1","id":"1yQqsXJeJaMrBaWeBAqYsudpN6ww6XVNm"},{"name":"Practice Folder 2","id":"1EJWL0r3sWddsThgfTl2S7KRHM8wPHAY4"},{"name":"Practice Folder 3","id":"1o_aGFl0_CtLoZCV2dPE3Zg-uASm2MpaV"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Practice Set 2<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Practice Folder 4","id":"1LDJ-86cJ3CZVnzgwDwH4Akrygkh187xc"},{"name":"Practice Folder 5","id":"1LVI0kWCbV1hcx4Vj9s6sqnOwftYoe0aA"},{"name":"Practice Folder 6","id":"1bnwrRSC8zNZsAqAA7Wxp3sxSqZEPlWPK"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Practice Set 3<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Practice Folder 7","id":"1BkxgpyYynsaCnlHCLsTFiDpiLyoexEQe"},{"name":"Practice Folder 8","id":"10Ti-eEVeHGaHAx-SPqU-4S1u-7EC1J90"},{"name":"Practice Folder 9","id":"1jPmyaWUg2TnEwN4U6LxBBq5eerDIpS0b"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Practice Set 4<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Practice Folder 10","id":"1etaoKt-5cyCGXcZ07Wf_wEre_ig3jPN_"},{"name":"Practice Folder 11","id":"1gWmlEpRu7Cu6I9n-aaAokY4HGNI49aEj"},{"name":"Practice Folder 12","id":"1iIuwK-TPHzwq2wOZnITbMGrpVFX8bI6a"}]'>View Materials</button></div></div>
+          </div>
+
+          <div class="lesson" data-type="ielts">
+            <div class="lesson-header" tabindex="0">IELTS Additional Resources<span class="arrow">▼</span></div>
+            <div class="lesson-materials"><div class="material"><button class="material-button" data-files='[{"name":"Resource Folder","id":"1G5XOkdpcQUdIuW5WG1pMlif7DWRUZ48G"},{"name":"Study Document","id":"1YtsXdDFIBhy80JGYFUSjA9EPmqy45URT"}]'>View Materials</button></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="modal-title">Document Viewer</div>
+          <div class="modal-controls">
+            <a id="download-btn" class="modal-btn" download>⬇ Download</a>
+            <button class="modal-btn close-btn" id="close-modal">✕</button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="file-tabs" class="file-tabs"></div>
+          <div class="viewer-container">
+            <div class="loading" id="loading">Loading document...</div>
+            <iframe id="document-viewer" style="display:none;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 ThinkLab Academy | All Rights Reserved
+    </footer>
+  </div>
+  <script src="materials.js"></script>
+</body>
+</html>
